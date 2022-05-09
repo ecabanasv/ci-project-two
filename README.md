@@ -13,7 +13,7 @@ Welcome!
   - [User Expectations:](#user-expectations)
   -	[Colour scheme and font](#color-scheme)
   - [Website skeleton](#wireframes)
-    - [Index](#index-page)
+  - [Index](#index-page)
 	- [Articles](#articles-page)
 	- [Article](#article-page)
 	- [Contact](#contact-page)
