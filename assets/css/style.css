@@ -1,25 +1,21 @@
 /* General */
 
-html,
-body,
-.container {
-    height: 100%;
-    margin: 0;
-}
-
 html {}
 
-body {}
+body {
+    max-width: 940px;
+    margin: auto;
+    padding: 10px;
+}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
         "header header header"
-        "nav nav nav"
         "main main main"
         "footer footer footer";
 }
@@ -28,43 +24,90 @@ body {}
     grid-area: header;
 }
 
-.nav {
-    grid-area: nav;
-}
-
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-        "main-1 main-1 main-1"
-        "main-2 main-2 main-2"
-        "main-3 main-3 main-3";
+        "main-player-score main-com-score"
+        "main-player-img main-com-img"
+        "main-text main-text"
+        "main-panel-game main-panel-game";
     grid-area: main;
 }
 
-.main-1 {
-    grid-area: main-1;
+.main-player-score {
+    grid-area: main-player-score;
 }
 
-.main-2 {
-    grid-area: main-2;
+.main-com-score {
+    grid-area: main-com-score;
 }
 
-.main-3 {
-    grid-area: main-3;
+.main-player-img {
+    grid-area: main-player-img;
+}
+
+.main-com-img {
+    grid-area: main-com-img;
+}
+
+.main-text {
+    grid-area: main-text;
+}
+
+.main-panel-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "main-panel-game-1 main-panel-game-2 main-panel-game-3 main-panel-game-4 main-panel-game-5";
+    grid-area: main-panel-game;
+}
+
+.main-panel-game-1 {
+    grid-area: main-panel-game-1;
+}
+
+.main-panel-game-2 {
+    grid-area: main-panel-game-2;
+}
+
+.main-panel-game-3 {
+    grid-area: main-panel-game-3;
+}
+
+.main-panel-game-4 {
+    grid-area: main-panel-game-4;
+}
+
+.main-panel-game-5 {
+    grid-area: main-panel-game-5;
 }
 
 .footer {
     grid-area: footer;
 }
 
-/* 1 */
+.social-networks {
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
 
-/* 2 */
+.social-networks a {
+    color: black;
+}
 
-/* 3 */
+.social-networks a i {
+    margin: 0 5px 0 5px;
+}
 
-/* 4 */
+/* CSS Grid: (from 500px) */
+
+@media (min-width: 501px) {}
