@@ -1,17 +1,21 @@
 /* General */
 
-html {}
+html {
+    background-color: whitesmoke;
+}
 
 body {
+    background-color: #ffdc71;
     max-width: 940px;
     margin: auto;
     padding: 10px;
+    box-shadow: 0px 5px 5px 0px gray;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -24,11 +28,19 @@ body {
     grid-area: header;
 }
 
+.header img {
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 50px auto;
     gap: 5px 5px;
+    justify-items: center;
     grid-auto-flow: row;
     grid-template-areas:
         "main-player-score main-com-score"
@@ -50,8 +62,16 @@ body {
     grid-area: main-player-img;
 }
 
+.main-player-img img {
+    width: 200px;
+}
+
 .main-com-img {
     grid-area: main-com-img;
+}
+
+.main-com-img img {
+    width: 200px;
 }
 
 .main-text {
@@ -73,20 +93,41 @@ body {
     grid-area: main-panel-game-1;
 }
 
+.main-panel-game-1 img {
+    width: 80px;
+}
+
+
 .main-panel-game-2 {
     grid-area: main-panel-game-2;
+}
+
+.main-panel-game-2 img {
+    width: 80px;
 }
 
 .main-panel-game-3 {
     grid-area: main-panel-game-3;
 }
 
+.main-panel-game-3 img {
+    width: 80px;
+}
+
 .main-panel-game-4 {
     grid-area: main-panel-game-4;
 }
 
+.main-panel-game-4 img {
+    width: 80px;
+}
+
 .main-panel-game-5 {
     grid-area: main-panel-game-5;
+}
+
+.main-panel-game-5 img {
+    width: 80px;
 }
 
 .footer {
