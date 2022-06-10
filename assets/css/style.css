@@ -15,7 +15,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: auto auto auto;
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -68,7 +68,7 @@ body {
 }
 
 .main-player-img img {
-    width: 200px;
+    width: 100px;
 }
 
 .main-com-img {
@@ -76,16 +76,11 @@ body {
 }
 
 .main-com-img img {
-    width: 200px;
+    width: 100px;
 }
 
 .main-text {
     grid-area: main-text;
-}
-
-.text-vs {
-    text-align: center;
-    font-size: 50px;
 }
 
 .main-text p {
@@ -108,7 +103,7 @@ body {
 }
 
 .main-panel-game-1 img {
-    width: 80px;
+    width: 40px;
 }
 
 
@@ -117,7 +112,7 @@ body {
 }
 
 .main-panel-game-2 img {
-    width: 80px;
+    width: 40px;
 }
 
 .main-panel-game-3 {
@@ -125,7 +120,7 @@ body {
 }
 
 .main-panel-game-3 img {
-    width: 80px;
+    width: 40px;
 }
 
 .main-panel-game-4 {
@@ -133,7 +128,7 @@ body {
 }
 
 .main-panel-game-4 img {
-    width: 80px;
+    width: 40px;
 }
 
 .main-panel-game-5 {
@@ -141,11 +136,54 @@ body {
 }
 
 .main-panel-game-5 img {
-    width: 80px;
+    width: 40px;
 }
 
 .footer {
     grid-area: footer;
+}
+
+.img-player{
+    background-image: url('../images/player.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.img-computer{
+    background-image: url('../images/computer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-rock{
+    background-image: url('../images/rock-x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-scissors{
+    background-image: url('../images/scissors-x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-paper{
+    background-image: url('../images/paper-x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-lizard{
+    background-image: url('../images/lizard-x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-spock{
+    background-image: url('../images/spock-x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .social-networks {
@@ -163,6 +201,38 @@ body {
     margin: 0 5px 0 5px;
 }
 
-/* CSS Grid: (from 500px) */
+/* CSS Grid: (from 376px) */
 
-@media (min-width: 501px) {}
+@media (min-width: 376px) {
+
+    .main-player-img img {
+        width: 200px;
+    }
+
+    .main-com-img img {
+        width: 200px;
+    }
+
+    .main-panel-game-1 img {
+        width: 80px;
+    }
+
+    .main-panel-game-2 img {
+        width: 80px;
+    }
+
+    .main-panel-game-3 img {
+        width: 80px;
+    }
+
+    .main-panel-game-4 img {
+        width: 80px;
+    }
+
+    .main-panel-game-5 img {
+        width: 80px;
+    }
+
+
+
+}
