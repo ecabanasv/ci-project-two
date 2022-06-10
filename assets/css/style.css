@@ -113,6 +113,11 @@ body {
     width: 40px;
 }
 
+.main-panel-game-1 img:hover {
+    transform: scale(1.5);
+}
+
+
 
 .main-panel-game-2 {
     grid-area: main-panel-game-2;
@@ -120,6 +125,10 @@ body {
 
 .main-panel-game-2 img {
     width: 40px;
+}
+
+.main-panel-game-2 img:hover {
+    transform: scale(1.5);
 }
 
 .main-panel-game-2 button {
@@ -136,6 +145,10 @@ body {
     width: 40px;
 }
 
+.main-panel-game-3 img:hover {
+    transform: scale(1.5);
+}
+
 .main-panel-game-3 button {
     border-radius: 40px;
     border: 1px solid;
@@ -150,6 +163,10 @@ body {
     width: 40px;
 }
 
+.main-panel-game-4 img:hover {
+    transform: scale(1.5);
+}
+
 .main-panel-game-4 button {
     border-radius: 40px;
     border: 1px solid;
@@ -162,6 +179,10 @@ body {
 
 .main-panel-game-5 img {
     width: 40px;
+}
+
+.main-panel-game-5 img:hover {
+    transform: scale(1.5);
 }
 
 .main-panel-game-5 button {
@@ -219,9 +240,10 @@ body {
 .btn-restart {
     visibility: hidden;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 53px;
     background-color: whitesmoke !important; 
+    border-radius: 0 !important;
 }
 
 .social-networks {
