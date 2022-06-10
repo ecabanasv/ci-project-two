@@ -147,7 +147,6 @@ body {
     background-image: url('../images/player.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .img-computer{
@@ -184,6 +183,13 @@ body {
     background-image: url('../images/spock-x.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.btn-restart {
+    visibility: hidden;
+    text-align: center;
+    margin-top: 5px;
+    width: 53px;
 }
 
 .social-networks {
@@ -233,6 +239,7 @@ body {
         width: 80px;
     }
 
-
-
+    .btn-restart {
+        width: auto;
+    }
 }
