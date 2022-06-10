@@ -7,8 +7,7 @@ html {
 body {
     background-color: #ffdc71;
     max-width: 940px;
-    margin: auto;
-    padding: 10px;
+    margin: 20px auto auto auto;
     box-shadow: 0px 5px 5px 0px gray;
 }
 
@@ -251,6 +250,7 @@ body {
     padding: 5px;
     margin-top: 20px;
     text-align: center;
+    border-top: 1px dotted gray;
 }
 
 .social-networks a {
