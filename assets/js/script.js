@@ -27,40 +27,50 @@ function computerChoose() {
 }
 
 function roundWinner(playerChoice, comChoice) {
-    let winnerResult = '';
+    let winnerResult;
 
-    switch (playerChoice) {
-        case 'rock':
-            if (comChoice === 'scissors' || comChoice === 'lizard') {
-                winnerResult = 'player';
-            }
-            break;
-        case 'scissors':
-            if (comChoice === 'paper' || comChoice === 'lizard') {
-                winnerResult = 'player';
-            }
-            break;
-        case 'paper':
-            if (comChoice === 'rock' || comChoice === 'spock') {
-                winnerResult = 'player';
-            }
-            break;
-        case 'lizard':
-            if (comChoice === 'spock' || comChoice === 'paper') {
-                winnerResult = 'player';
-            }
-            break;
-        case 'spock':
-            if (comChoice === 'scissors' || comChoice === 'rock') {
-                winnerResult = 'player';
-            }
-            break;
-        case comChoice:
-                winnerResult = 'draw';
-            break;
-        default:
-            winnerResult = 'computer'
+    if (playerChoice === comChoice) {
+        winnerResult = 'draw';
+    } else {
+        switch (playerChoice) {
+            case 'rock':
+                if (comChoice === 'scissors' || comChoice === 'lizard') {
+                    winnerResult = 'player';
+                } else {
+                    winnerResult = 'computer';
+                }
+                break;
+            case 'scissors':
+                if (comChoice === 'paper' || comChoice === 'lizard') {
+                    winnerResult = 'player';
+                } else {
+                    winnerResult = 'computer';
+                }
+                break;
+            case 'paper':
+                if (comChoice === 'rock' || comChoice === 'spock') {
+                    winnerResult = 'player';
+                } else {
+                    winnerResult = 'computer';
+                }
+                break;
+            case 'lizard':
+                if (comChoice === 'spock' || comChoice === 'paper') {
+                    winnerResult = 'player';
+                } else {
+                    winnerResult = 'computer';
+                }
+                break;
+            case 'spock':
+                if (comChoice === 'scissors' || comChoice === 'rock') {
+                    winnerResult = 'player';
+                } else {
+                    winnerResult = 'computer';
+                }
+                break;
+        }
     }
+
     console.log("winnerResult: " + winnerResult);
     adjustScore(winnerResult);
 
