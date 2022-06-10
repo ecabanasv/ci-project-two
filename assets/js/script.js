@@ -112,6 +112,17 @@ function adjustScore() {
     } else {
         document.getElementById("text-result").innerText = "Draw round";
     }
+
+    if (playerScore > comScore){
+        document.getElementById("player-label").style.color = "green";
+        document.getElementById("computer-label").style.color = "red";
+    } else if (playerScore < comScore){
+        document.getElementById("player-label").style.color = "red";
+        document.getElementById("computer-label").style.color = "green"; 
+    } else{
+        document.getElementById("player-label").style.color = "black";
+        document.getElementById("computer-label").style.color = "black";     
+    }
 }
 
 function restartGame(){
