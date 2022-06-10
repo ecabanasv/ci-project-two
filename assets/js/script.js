@@ -26,10 +26,54 @@ function computerChoose() {
     return comChoice;
 }
 
-function roundWinner(){
+function roundWinner(playerChoice, comChoice) {
+    let winnerResult = '';
+
+    switch (playerChoice) {
+        case 'rock':
+            if (comChoice === 'scissors' || comChoice === 'lizard') {
+                winnerResult = 'player';
+            }
+            break;
+        case 'scissors':
+            if (comChoice === 'paper' || comChoice === 'lizard') {
+                winnerResult = 'player';
+            }
+            break;
+        case 'paper':
+            if (comChoice === 'rock' || comChoice === 'spock') {
+                winnerResult = 'player';
+            }
+            break;
+        case 'lizard':
+            if (comChoice === 'spock' || comChoice === 'paper') {
+                winnerResult = 'player';
+            }
+            break;
+        case 'spock':
+            if (comChoice === 'scissors' || comChoice === 'rock') {
+                winnerResult = 'player';
+            }
+            break;
+        case comChoice:
+                winnerResult = 'draw';
+            break;
+        default:
+            winnerResult = 'computer'
+    }
+    console.log("winnerResult: " + winnerResult);
+    adjustScore(winnerResult);
 
 }
 
-function adjustScore(){
-
+function adjustScore() {
+    if (arguments[0] === 'player') {
+        document.getElementById("player-score").innerText = ++playerScore;
+        document.getElementById("text-result").innerText = "Player won this round";
+    } else if (arguments[0] === 'computer') {
+        document.getElementById("com-score").innerText = ++comScore;
+        document.getElementById("text-result").innerText = "Computer won this round";
+    } else {
+        document.getElementById("text-result").innerText = "Draw round";
+    }
 }
