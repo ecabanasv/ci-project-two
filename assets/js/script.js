@@ -1,6 +1,11 @@
+/*jshint esversion: 6 */
+
 // Scores initialization
 let comScore = 0,
     playerScore = 0;
+
+let imgPlayer = document.getElementById("img-player");
+let imgComputer = document.getElementById("img-computer");
 
 // Function that gather player and computer choices and call the 
 // function roundWinner to choose the winner and increase score
@@ -10,11 +15,12 @@ function playerChoose() {
     // Computer choice
     let comChoice = computerChoose();
 
-    const result = roundWinner(playerChoice, comChoice);
-
     // Console log
-    console.log(playerChoice);
-    console.log(comChoice);
+    console.log("Player: " + playerChoice);
+    console.log("Computer: " + comChoice);
+    console.log("---");
+    roundWinner(playerChoice, comChoice);
+    console.log("---");
 }
 
 // Function that returns the random computer choice
@@ -26,14 +32,20 @@ function computerChoose() {
     return comChoice;
 }
 
+// Function check the player choice agaisnt computer for choose the winner and increase its score
 function roundWinner(playerChoice, comChoice) {
     let winnerResult;
 
     if (playerChoice === comChoice) {
+        imgPlayer.src = 'assets/images/' + playerChoice + '-x.png';
+        imgComputer.src = 'assets/images/' + comChoice + '-x.png';
         winnerResult = 'draw';
     } else {
         switch (playerChoice) {
             case 'rock':
+            
+                imgPlayer.src = 'assets/images/rock-x.png';
+                imgComputer.src = 'assets/images/' + comChoice + '-x.png';
                 if (comChoice === 'scissors' || comChoice === 'lizard') {
                     winnerResult = 'player';
                 } else {
@@ -41,6 +53,8 @@ function roundWinner(playerChoice, comChoice) {
                 }
                 break;
             case 'scissors':
+                imgPlayer.src = 'assets/images/scissors-x.png';
+                imgComputer.src = 'assets/images/' + comChoice + '-x.png';
                 if (comChoice === 'paper' || comChoice === 'lizard') {
                     winnerResult = 'player';
                 } else {
@@ -48,6 +62,8 @@ function roundWinner(playerChoice, comChoice) {
                 }
                 break;
             case 'paper':
+                imgPlayer.src = 'assets/images/paper-x.png';
+                imgComputer.src = 'assets/images/' + comChoice + '-x.png';
                 if (comChoice === 'rock' || comChoice === 'spock') {
                     winnerResult = 'player';
                 } else {
@@ -55,6 +71,8 @@ function roundWinner(playerChoice, comChoice) {
                 }
                 break;
             case 'lizard':
+                imgPlayer.src = 'assets/images/lizard-x.png';
+                imgComputer.src = 'assets/images/' + comChoice + '-x.png';
                 if (comChoice === 'spock' || comChoice === 'paper') {
                     winnerResult = 'player';
                 } else {
@@ -62,6 +80,8 @@ function roundWinner(playerChoice, comChoice) {
                 }
                 break;
             case 'spock':
+                imgPlayer.src = 'assets/images/spock-x.png';
+                imgComputer.src = 'assets/images/' + comChoice + '-x.png';
                 if (comChoice === 'scissors' || comChoice === 'rock') {
                     winnerResult = 'player';
                 } else {
@@ -71,11 +91,12 @@ function roundWinner(playerChoice, comChoice) {
         }
     }
 
-    console.log("winnerResult: " + winnerResult);
+    console.log("Result: " + winnerResult);
     adjustScore(winnerResult);
 
 }
 
+// Functions that increases the score of the player/computer 
 function adjustScore() {
     if (arguments[0] === 'player') {
         document.getElementById("player-score").innerText = ++playerScore;
