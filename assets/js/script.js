@@ -6,6 +6,7 @@ let comScore = 0,
 
 let imgPlayer = document.getElementById("img-player");
 let imgComputer = document.getElementById("img-computer");
+let btnRestart = document.getElementById("btn-restart");
 
 // Function that gather player and computer choices and call the 
 // function roundWinner to choose the winner and increase score
@@ -14,6 +15,10 @@ function playerChoose() {
     let playerChoice = arguments[0];
     // Computer choice
     let comChoice = computerChoose();
+
+    if (playerScore > 1 || comScore > 1){
+        btnRestart.style.visibility = 'visible'
+    }
 
     // Console log
     console.log("Player: " + playerChoice);
@@ -107,4 +112,14 @@ function adjustScore() {
     } else {
         document.getElementById("text-result").innerText = "Draw round";
     }
+}
+
+function restartGame(){
+    imgPlayer.src = 'assets/images/player.png';
+    imgComputer.src = 'assets/images/computer.png';
+    document.getElementById("player-score").innerText = 0;
+    document.getElementById("com-score").innerText = 0;
+    playerScore = 0;
+    comScore = 0;
+    btnRestart.style.visibility = 'hidden';
 }
