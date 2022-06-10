@@ -209,7 +209,7 @@ body {
 
 /* CSS Grid: (from 376px) */
 
-@media (min-width: 376px) {
+@media (min-width: 500px) {
 
     .main-player-img img {
         width: 200px;
