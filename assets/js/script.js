@@ -132,5 +132,7 @@ function restartGame(){
     document.getElementById("com-score").innerText = 0;
     playerScore = 0;
     comScore = 0;
+    document.getElementById("player-label").style.color = "black";
+    document.getElementById("computer-label").style.color = "black";
     btnRestart.style.visibility = 'hidden';
 }
