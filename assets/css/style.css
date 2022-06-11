@@ -65,6 +65,8 @@ body {
 
 .main-player-img {
     grid-area: main-player-img;
+    text-align: center;
+    font-size: 20px;
 }
 
 .main-player-img img {
@@ -73,6 +75,8 @@ body {
 
 .main-com-img {
     grid-area: main-com-img;
+    text-align: center;
+    font-size: 20px;
 }
 
 .main-com-img img {

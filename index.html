@@ -25,13 +25,13 @@
             <h1 id="player-label">Player</h1>
             <p class="player-score-text" id="player-score">0</p>
         </div>
-        <div class="main-player-img"><img id="img-player" src="assets/images/player.png" alt="player"></div>
+        <div class="main-player-img"><img id="img-player" src="assets/images/player.png" alt="player"><br><span id="player-choice"></span></div>
         <!-- computer -->
         <div class="main-com-score">
             <h1 id="computer-label">Computer</h1>
             <p class="com-score-text" id="com-score">0</p>
         </div>
-        <div class="main-com-img"><img id="img-computer" src="assets/images/computer.png" alt="computer"></div>
+        <div class="main-com-img"><img id="img-computer" src="assets/images/computer.png" alt="computer"><br><span id="computer-choice"></span></div>
         <!-- main text -->
         <div class="main-text">
             <p id="text-result">Welcome to the game</p>
@@ -44,8 +44,8 @@
                         src="assets/images/scissors.png" alt="scissors"></button></div>
             <div class="main-panel-game-3"><button id="btn-paper" onclick="playerChoose('paper')"><img
                         src="assets/images/paper.png" alt="paper"></button>
-                        <br>
-                        <button id="btn-restart" class="btn-restart" onclick="restartGame()">Restart Game</button></div>
+                <br>
+                <button id="btn-restart" class="btn-restart" onclick="restartGame()">Restart Game</button></div>
             <div class="main-panel-game-4"><button id="btn-lizard" onclick="playerChoose('lizard')"><img
                         src="assets/images/lizard.png" alt="lizard"></button></div>
             <div class="main-panel-game-5"><button id="btn-spock" onclick="playerChoose('spock')"><img
