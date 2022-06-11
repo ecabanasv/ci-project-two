@@ -130,6 +130,7 @@ function restartGame(){
     imgComputer.src = 'assets/images/computer.png';
     document.getElementById("player-score").innerText = 0;
     document.getElementById("com-score").innerText = 0;
+    document.getElementById("text-result").innerText = "New game, choose wisely...";
     playerScore = 0;
     comScore = 0;
     document.getElementById("player-label").style.color = "black";
