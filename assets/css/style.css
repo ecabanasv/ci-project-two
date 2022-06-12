@@ -265,6 +265,10 @@ body {
     margin: 0 5px 0 5px;
 }
 
+.info-icon{
+    
+}
+
 /* CSS Grid: (from 376px) */
 
 @media (min-width: 500px) {

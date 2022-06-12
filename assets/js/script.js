@@ -12,7 +12,12 @@ let playerScore = 0,
     computerLabel = document.getElementById("computer-label"),
     computerPlays = document.getElementById("computer-choice"),
     textResult = document.getElementById("text-result"),
-    btnRestart = document.getElementById("btn-restart");
+    btnRestart = document.getElementById("btn-restart"),
+    btnRock = document.querySelector('#btn-rock'),
+    btnScissors = document.querySelector('#btn-scissors'),
+    btnPaper = document.querySelector('#btn-paper'),
+    btnLizard = document.querySelector('#btn-lizard'),
+    btnSpock = document.querySelector('#btn-spock');
 
 // Function that gather player and computer choices and call the 
 // function roundWinner to choose the winner and increase score
@@ -22,6 +27,7 @@ function playerChoose() {
     // Computer choice
     let comChoice = computerChoose();
 
+    // If playerScore or comScore > 1 show button restart game
     if (playerScore > 1 || comScore > 1) {
         btnRestart.style.visibility = 'visible'
     }
@@ -106,7 +112,6 @@ function roundWinner(playerChoice, comChoice) {
 
     console.log("Result: " + winnerResult);
     adjustScore(winnerResult);
-
 }
 
 // Functions that increases the score of the player/computer 
@@ -114,13 +119,18 @@ function adjustScore() {
     if (arguments[0] === 'player') {
         playerScoreText.innerText = ++playerScore;
         textResult.innerText = "Player won this round";
+        checkWinnerGame();
     } else if (arguments[0] === 'computer') {
         document.getElementById("com-score").innerText = ++comScore;
         textResult.innerText = "Computer won this round";
+        checkWinnerGame();
     } else {
         textResult.innerText = "Draw round";
     }
+    colorWhoIsWinning();
+}
 
+function colorWhoIsWinning() {
     if (playerScore > comScore) {
         playerLabel.style.color = "green";
         computerLabel.style.color = "red";
@@ -133,8 +143,32 @@ function adjustScore() {
     }
 }
 
+// Function that check the winner of the game (when one or another reach 10 points)
+function checkWinnerGame() {
+    if (playerScore === 10) {
+        EnableDisableChoicesGame(true);
+        console.log("checkWinnerGamePlayer");
+        textResult.innerText = "Winner of the game: Player";
+    } else if (comScore === 10) {
+        EnableDisableChoicesGame(true);
+        console.log("checkWinnerGameComputer");
+        textResult.innerText = "Winner of the game: Computer";
+    }
+}
+
+// Function that disables panel choices after one of the players wins the game
+function EnableDisableChoicesGame(option) {
+    btnRock.disabled = option;
+    btnScissors.disabled = option;
+    btnPaper.disabled = option;
+    btnLizard.disabled = option;
+    btnSpock.disabled = option;
+}
+
 // Function that reset the game 
 function restartGame() {
+    EnableDisableChoicesGame(false);
+    roundCounter = 0;
     imgPlayer.src = 'assets/images/player.png';
     imgComputer.src = 'assets/images/computer.png';
     playerScoreText.innerText = 0;
