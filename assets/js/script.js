@@ -29,7 +29,7 @@ function playerChoose() {
 
     // If playerScore or comScore > 1 show button restart game
     if (playerScore > 1 || comScore > 1) {
-        btnRestart.style.visibility = 'visible'
+        btnRestart.style.visibility = 'visible';
     }
 
     // Console log
@@ -169,7 +169,6 @@ function EnableDisableChoicesGame(option) {
 // Function that reset the game 
 function restartGame() {
     EnableDisableChoicesGame(false);
-    roundCounter = 0;
     imgPlayer.src = 'assets/images/player.png';
     imgComputer.src = 'assets/images/computer.png';
     playerScoreText.innerText = 0;
