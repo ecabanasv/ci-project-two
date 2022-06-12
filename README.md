@@ -83,7 +83,7 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
   
 <a name="index-page"></a>
 ### Index Page
-![Wireframe](./assets/readme/02-wireframe-desktop.png)
+![Wireframe](./assets/readme/02-wireframe.png)
 
   <a name="features"></a>
 # 2. Features
