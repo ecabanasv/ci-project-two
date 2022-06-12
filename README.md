@@ -89,7 +89,6 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 # 2. Features
   [Go to the top](#table-of-contents)
 
-
    <a name="technologies"></a>
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
@@ -153,7 +152,7 @@ Head title| Correct title | OK
 Favicon| Correct visualization of favicon | OK
 Responsive design| Correct visualization of content | OK
 
- ## index.html - game functionality:
+## index.html - game functionality:
 TEST            | RESULT                           | OK / FAIL  
 --------------- | -------------------------------- | ---------------
 player/computer title color| Changing color when player or computer is winning/losing | OK
@@ -164,7 +163,7 @@ panel choices| Correct functionality of game when player choose option: Rock, Sc
 winner round| Show winner round text when player/computer reach 10 poins | OK
 restart button| Show restart button after player/computer reach 2 points | OK
 
- ### Footer
+### Footer
 
 TEST            | RESULT                           | OK / FAIL  
 --------------- | -------------------------------- | ---------------
