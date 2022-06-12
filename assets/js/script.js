@@ -130,6 +130,7 @@ function adjustScore() {
     colorWhoIsWinning();
 }
 
+// Function: change color of Player / Computer color to green or red when winning or losing
 function colorWhoIsWinning() {
     if (playerScore > comScore) {
         playerLabel.style.color = "green";
@@ -181,4 +182,8 @@ function restartGame() {
     playerLabel.style.color = "black";
     computerLabel.style.color = "black";
     btnRestart.style.visibility = 'hidden';
+}
+
+function popInstructions(){
+    Swal.fire({icon: 'info', html: 'Wins who reach 10 points. Game can be reset after 2 points.<br><br>- Combinations -<br>Scissors cuts Paper<br>Paper covers Rock<br>Rock crushes Lizard<br>Lizard poisons Spock<br>Spock smashes Scissors<br>Scissors decapitates Lizard<br>Lizard eats Paper<br>Paper disproves Spock<br>Spock vaporizes Rock<br>Rock crushes Scissors',showCloseButton: true});
 }

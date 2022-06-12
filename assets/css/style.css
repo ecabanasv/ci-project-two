@@ -266,7 +266,7 @@ body {
 }
 
 .info-icon{
-    
+    color: blue !important;
 }
 
 /* CSS Grid: (from 376px) */
