@@ -1,5 +1,12 @@
 /* General */
 
+html,
+body {
+    border-left: 1px dotted gray;
+    border-right: 1px dotted gray;
+    box-shadow: 0px 5px 5px 0px gray;
+}
+
 html {
     background-color: gainsboro;
     height: 100%;
@@ -11,7 +18,6 @@ body {
     background-color: #ffdc71;
     max-width: 940px;
     margin: auto;
-    box-shadow: 0px 5px 5px 0px gray;
 }
 
 .container {
@@ -43,6 +49,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 5px 5px;
+    background-color: #ffdc71;
     justify-items: center;
     grid-auto-flow: row;
     grid-template-areas:
