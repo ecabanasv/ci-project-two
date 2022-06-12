@@ -146,7 +146,7 @@ For the validation of the JavaScript code, the JSHint tool has been used [JSHint
  
 The main branch of this repository has been used for the deployed version of this application.
 
-# Via Gitpod
+## Via Gitpod
 
 The project deployment was based on the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
@@ -180,7 +180,7 @@ Cloning your repository will allow you to download a local version of the reposi
   5. In the terminal type 'git clone' & then paste the link you copied on GitHub
   6. Press enter and your local clone will be created.
 
-# Via Github Pages
+## Via Github Pages
 
   - The live website was deployed to GitHub pages. The steps to deploy are as follows: 
   
