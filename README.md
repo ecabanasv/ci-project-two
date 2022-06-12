@@ -144,7 +144,7 @@ For the validation of the JavaScript code, the JSHint tool has been used [JSHint
 # 6. Deployment
   [Go to the top](#table-of-contents)
  
-The master branch of this repository has been used for the deployed version of this application.
+The main branch of this repository has been used for the deployed version of this application.
 
 # Via Gitpod
 
