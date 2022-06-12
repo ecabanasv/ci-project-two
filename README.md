@@ -134,6 +134,45 @@ For the validation of the JavaScript code, the JSHint tool has been used [JSHint
 
 ## 4.2 Manual Testing
 
+Web display has been tested on all available devices from the "Responsive Design Mode" tool of Firefox Developer Edition. This device list includes the following:
+
+- Galaxy Note 20 (412x915)
+- Galaxy S20 (360x800)
+- Ipad (810x1080)
+- Iphone 11 Pro (375x812)
+- IPhone 12/13 Mini (390x844)
+- IPhone 11 SE 2nd Gen (375x667)
+- Kindle Fire HDX (800x1280)
+
+ ## index.html - design:
+TEST            | RESULT                           | OK / FAIL  
+--------------- | -------------------------------- | ---------------
+Header| Correct visualization of header image | OK
+Footer| Correct size and links / social & info | OK
+Head title| Correct title | OK
+Favicon| Correct visualization of favicon | OK
+Responsive design| Correct visualization of content | OK
+
+ ## index.html - game functionality:
+TEST            | RESULT                           | OK / FAIL  
+--------------- | -------------------------------- | ---------------
+player/computer title color| Changing color when player or computer is winning/losing | OK
+player/computer scores| Increases player/computer scores when win round | OK
+text result| Show round winner / Game winner / Welcome text / Restart text | OK
+player/computer images| Show image of choice for Player/Computer when select panel choice  | OK
+panel choices| Correct functionality of game when player choose option: Rock, Scissors, Paper, Lizard and Spock | OK
+winner round| Show winner round text when player/computer reach 10 poins | OK
+restart button| Show restart button after player/computer reach 2 points | OK
+
+ ### Footer
+
+TEST            | RESULT                           | OK / FAIL  
+--------------- | -------------------------------- | ---------------
+Facebook | Open FB site in new tab | OK
+Instagram| Open IG site in new tab  | OK
+Twitter| Open Twitter site in new tab | OK
+Instructions | Load sweet alert with instructions info | OK
+
   <a name="bugs"></a>
 # 5. Bugs
   [Go to the top](#table-of-contents)
