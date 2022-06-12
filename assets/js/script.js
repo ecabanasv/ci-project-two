@@ -184,6 +184,12 @@ function restartGame() {
     btnRestart.style.visibility = 'hidden';
 }
 
-function popInstructions(){
-    Swal.fire({title: '<strong>Instructions</strong>', icon: 'info', html: 'Wins who reach 10 points. Game can be reset after 2 points.<br><br>- Combinations -<br>Scissors cuts Paper<br>Paper covers Rock<br>Rock crushes Lizard<br>Lizard poisons Spock<br>Spock smashes Scissors<br>Scissors decapitates Lizard<br>Lizard eats Paper<br>Paper disproves Spock<br>Spock vaporizes Rock<br>Rock crushes Scissors',showCloseButton: true});
+// Function that loads sweet alert popup game instructions when press icon ? in index.html
+function popInstructions() {
+    Swal.fire({
+        title: '<strong>Instructions</strong>',
+        icon: 'info',
+        html: 'Wins who reach 10 points. Game can be reset after 2 points.<br><br>- Combinations -<br>Scissors cuts Paper<br>Paper covers Rock<br>Rock crushes Lizard<br>Lizard poisons Spock<br>Spock smashes Scissors<br>Scissors decapitates Lizard<br>Lizard eats Paper<br>Paper disproves Spock<br>Spock vaporizes Rock<br>Rock crushes Scissors',
+        showCloseButton: true
+    });
 }

@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #ffdc71;
     max-width: 940px;
     margin: 20px auto auto auto;
@@ -55,6 +56,9 @@ body {
 
 .main-com-score {
     grid-area: main-com-score;
+}
+.gamer-text{
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .player-score-text,
@@ -198,43 +202,43 @@ body {
     grid-area: footer;
 }
 
-.img-player{
+.img-player {
     background-image: url('../images/player.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-computer{
+.img-computer {
     background-image: url('../images/computer.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-rock{
+.img-rock {
     background-image: url('../images/rock-x.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-scissors{
+.img-scissors {
     background-image: url('../images/scissors-x.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-paper{
+.img-paper {
     background-image: url('../images/paper-x.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-lizard{
+.img-lizard {
     background-image: url('../images/lizard-x.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.img-spock{
+.img-spock {
     background-image: url('../images/spock-x.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -243,10 +247,17 @@ body {
 .btn-restart {
     visibility: hidden;
     text-align: center;
-    margin-top: 10px;
     width: 53px;
-    background-color: whitesmoke !important; 
+    margin-top: 10px;
     border-radius: 0 !important;
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #555555;
+  }
+  
+  .btn-restart:hover {
+    background-color: #555555 !important;
+    color: white !important;
 }
 
 .social-networks {
@@ -265,8 +276,8 @@ body {
     margin: 0 5px 0 5px;
 }
 
-.info-icon{
-    color: blue !important;
+.info-icon {
+    color:teal  !important;
 }
 
 /* CSS Grid: (from 376px) */

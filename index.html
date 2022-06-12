@@ -8,6 +8,11 @@
     <title>Live long and prosper - Game</title>
     <!-- favicon icon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <!-- font awesome js script -->
     <script src="https://kit.fontawesome.com/e97ddb00dd.js" crossorigin="anonymous"></script>
     <!-- sweet alert 2 library -->
@@ -24,14 +29,14 @@
     <main class="main">
         <!-- player -->
         <div class="main-player-score">
-            <h1 id="player-label">Player</h1>
+            <h1 class="gamer-text" id="player-label">Player</h1>
             <p class="player-score-text" id="player-score">0</p>
         </div>
         <div class="main-player-img"><img id="img-player" src="assets/images/player.png" alt="player"><br><span
                 id="player-choice"></span></div>
         <!-- computer -->
         <div class="main-com-score">
-            <h1 id="computer-label">Computer</h1>
+            <h1 class="gamer-text" id="computer-label">Computer</h1>
             <p class="com-score-text" id="com-score">0</p>
         </div>
         <div class="main-com-img"><img id="img-computer" src="assets/images/computer.png" alt="computer"><br><span
@@ -51,7 +56,6 @@
                 <br>
                 <button id="btn-restart" class="btn-restart" onclick="restartGame()">Restart Game</button>
             </div>
-
             <div class="main-panel-game-4"><button id="btn-lizard" onclick="playerChoose('lizard')"><img
                         src="assets/images/lizard.png" alt="lizard"></button></div>
             <div class="main-panel-game-5"><button id="btn-spock" onclick="playerChoose('spock')"><img
@@ -64,8 +68,9 @@
         <div class="social-networks">
             <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa-solid fa-instagram fa"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fa-solid fa-twitter fa"></i></a> 
-            <a href="#" target="_self" class="info-icon" onclick="popInstructions()"><i class="fa-solid fa-circle-question"></i></a>   
+            <a href="https://twitter.com" target="_blank"><i class="fa-solid fa-twitter fa"></i></a> | 
+            <a href="#" target="_self" class="info-icon" onclick="popInstructions()"><i
+                    class="fa-solid fa-circle-question"></i></a>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
