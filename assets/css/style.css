@@ -14,11 +14,13 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     background-color: #ffdc71;
     max-width: 940px;
     margin: auto;
 }
+
+/* CSS Grid: < 500px */
 
 .container {
     display: grid;
@@ -132,6 +134,7 @@ body {
     width: 40px;
 }
 
+/* Increasing image size when mouse hover */
 .main-panel-game-1 img:hover {
     transform: scale(1.5);
 }
@@ -146,6 +149,7 @@ body {
     width: 40px;
 }
 
+/* Increasing image size when mouse hover */
 .main-panel-game-2 img:hover {
     transform: scale(1.5);
 }
@@ -164,6 +168,7 @@ body {
     width: 40px;
 }
 
+/* Increasing image size when mouse hover */
 .main-panel-game-3 img:hover {
     transform: scale(1.5);
 }
@@ -182,6 +187,7 @@ body {
     width: 40px;
 }
 
+/* Increasing image size when mouse hover */
 .main-panel-game-4 img:hover {
     transform: scale(1.5);
 }
@@ -200,6 +206,7 @@ body {
     width: 40px;
 }
 
+/* Increasing image size when mouse hover */
 .main-panel-game-5 img:hover {
     transform: scale(1.5);
 }
@@ -214,6 +221,7 @@ body {
     grid-area: footer;
 }
 
+/* Start - Images used for replace player and computer original image */
 .img-player {
     background-image: url('../images/player.png');
     background-size: contain;
@@ -255,7 +263,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+/* Start - Images used for replace player and computer original image */
 
+
+
+/* btnRestart hidden before player and computer reach 3 points */
 .btn-restart {
     visibility: hidden;
     text-align: center;
@@ -269,11 +281,13 @@ body {
     border: 2px solid #555555;
 }
 
+/* btnRestar mouse hover effect */
 .btn-restart:hover {
     background-color: #555555 !important;
     color: white !important;
 }
 
+/* Social networks icons */
 .social-networks {
     font-size: 25px;
     padding: 5px;
@@ -290,11 +304,12 @@ body {
     margin: 0 5px 0 5px;
 }
 
+/* Instruction info icon */
 .info-icon {
     color: teal !important;
 }
 
-/* CSS Grid: (from 376px) */
+/* CSS Grid: (from 500px) */
 
 @media (min-width: 500px) {
 
