@@ -1,14 +1,12 @@
 /* General */
 
-body {
-    border: 1px dotted gray;
-}
-
 html {
+    height: 100%;
     background-color: gainsboro;
 }
 
 body {
+    border: 1px dotted gray;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #ffdc71;
@@ -286,6 +284,7 @@ body {
 
 /* Social networks icons */
 .social-networks {
+    background-color: #ffdc71;
     font-size: 25px;
     padding: 5px;
     margin-top: 5px;
