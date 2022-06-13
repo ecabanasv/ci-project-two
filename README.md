@@ -185,7 +185,7 @@ For the validation of the HTML code, the official tool has been used [W3C Markup
 For the validation of the JavaScript code, the JSHint tool has been used [JSHint](https://jshint.com/).
 
 #### JS Validator
- ![js validator](assets/readme/07-js-validator.png)
+ ![js validator](assets/readme/08-js-validator.png)
 
 ## 4.2 Manual Testing
 
