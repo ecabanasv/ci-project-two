@@ -303,8 +303,8 @@ The live link can be found [here](https://ecabanasv.github.io/ci-project-two/#).
 
 ### Content
 
-- Thank you to kasia_ci from Code Institute for all the guidance in the slack channel #msletb-mar-2022.
-- Also thank you to channel #peer-code-review for the code suggestions.
+- Many thanks to kasia_ci from Code Institute for all the guidance and info well provided during these weeks in the slack channel #msletb-mar-2022.
+- Also thanks to channel buddies in #peer-code-review for the code suggestions.
 
 ### Images
 
