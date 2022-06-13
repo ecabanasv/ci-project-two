@@ -91,49 +91,50 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 
   ### 2.1. Header (1)
 
-  Header de la página web del juego con el título y el famoso personaje de la serie Star Trek, Spock.
+ The header picture of the game includes the title and the famous character of the Star Trek series, Spock.
 
   ### 2.2. Gamer title (2)
 
-  - El texto de "Player" y "Computer" utilizan una font-style de Google Font llamada "Kdam Thmor Pro". 
-  - El color del texto cambiará dependiendo del estado del score del juego. Si un jugador va ganando la partida el color del texto será verde, si va perdiendo será rojo y si ambos jugadores van empatando la partida, será negro.
+   - The "Player" and "Computer" text is using a Google Font style called "Kdam Thor Pro".
+   - The colour of the text will change depending on the state of the game's score. If a player wins the game, the colour of the text will be green; if he loses, it will be red; if both players are drawing the game, it will be black.
 
   ### 2.3. Gamer score (3)
 
-  - El texto del score de los jugadores utiliza una font-style de Google Fonts llamada "Arimo".
-  - Este número se incrementará cuando el jugador vaya ganando las rondas de la partida.
+   - The players' score text uses a Google Font Style named "Arimo".
+   - This number will increase when the player/computer wins the rounds of the game.
 
   ### 2.4. Gamer image (4)
 
-  - Las imágenes por defecto al empezar la partida mostrarán un icono de usuario y de la computadora respectivamente.
-  - Estas imágenes cambiaran a la imagen de la elección de cada jugador en cada ronda (Rock, Scissors, Paper, Lizard or Spock).
+   - The default images at the beginning will show a user and computer icon, respectively.
+   - These images will change to the image of each player's choice in each round (rock, scissors, Paper, Lizard or Spock).
 
   ### 2.5. Text welcome-result (5)
 
-  - El texto inicial será el de bienvenida al propio juego.
-  - Este texto cambiará con el resultado de cada ronda de la partida mostrando el ganador.
-  - Cuando uno de los jugadores alcance los 10 puntos, el texto mostrará el ganador.
+   - The initial text will be the welcome to the game text.
+   - This text will change with the result of each game round showing the winner.
+   - When one of the players reaches 10 points, the text will show the game winner.
 
   ### 2.6. Panel player choices (6)
 
-  - Panel con las cinco elecciones que el jugador puede realizar durante la partida.
-  - Al acercar el cursor del ratón a una de las elecciones estás serán agrandadas 1.5 en escala de la imagen.
-  - Cuando se seleccione una opción se inicará la ronda, donde la computadora elegirá su elección también.
-  - Las imágenes de cada elección serán mostraras en el Gamer Image.
+   - Panel with the five elections that the player can make during the game (rock, scissors, Paper, Lizard or Spock).
+   - As the mouse cursor approaches one of the elections, CSS code will enlarge the image 1.5 on the image scale.
+   - When an option is selected, it will initiate the round, where the computer will also choose its choice randomly.
+   - The images of each choice will be shown in the Gamer Image.
+   - When player/computer reach 10 points the panel player choice will be disabled. 
 
   ### 2.7. Restart button (7)
 
-  - El botón de restar game aparecerá cuando uno de los jugadores alcance los 2 puntos.
-  - Este botón será la única opción que podrá utilizar el jugador al acabar cada partida (10 rondas).
+   - The restart button will appear when one of the players reaches 2 points.
+   - This button will be the only option that the player can use at the end of each game (10 rounds).
 
   ### 2.8. Footer - Social network icons (8)
 
-  - Iconos de las redes sociales más famosas (FB, IG and Twitter)
+  - Icons of the most famous social networks (FB, IG and Twitter)
 
   ### 2.9. Footer - Instructions info icon (9)
 
-  - Junto a los iconos de las redes sociales y separado con un separador se podrá acceder al icono de las instrucciones de la partida.
-  - Cuando se haga click en el icono se activará un pop-up sweet alert 2 con las instrucciones de la partida.
+   - Together with the icons of social networks and separated with a separator, you can access the icon of the game's instructions.
+   - When clicking on the icon, it will activate a Pop-Up Sweet Alert 2 with the game's instructions.
 
    <a name="technologies"></a>
 # 3. Technologies Used
