@@ -87,6 +87,54 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 # 2. Features
   [Go to the top](#table-of-contents)
 
+  ![website features](assets/readme/05-website-features.png)
+
+  ### 2.1. Header (1)
+
+  Header de la página web del juego con el título y el famoso personaje de la serie Star Trek, Spock.
+
+  ### 2.2. Gamer title (2)
+
+  - El texto de "Player" y "Computer" utilizan una font-style de Google Font llamada "Kdam Thmor Pro". 
+  - El color del texto cambiará dependiendo del estado del score del juego. Si un jugador va ganando la partida el color del texto será verde, si va perdiendo será rojo y si ambos jugadores van empatando la partida, será negro.
+
+  ### 2.3. Gamer score (3)
+
+  - El texto del score de los jugadores utiliza una font-style de Google Fonts llamada "Arimo".
+  - Este número se incrementará cuando el jugador vaya ganando las rondas de la partida.
+
+  ### 2.4. Gamer image (4)
+
+  - Las imágenes por defecto al empezar la partida mostrarán un icono de usuario y de la computadora respectivamente.
+  - Estas imágenes cambiaran a la imagen de la elección de cada jugador en cada ronda (Rock, Scissors, Paper, Lizard or Spock).
+
+  ### 2.5. Text welcome-result (5)
+
+  - El texto inicial será el de bienvenida al propio juego.
+  - Este texto cambiará con el resultado de cada ronda de la partida mostrando el ganador.
+  - Cuando uno de los jugadores alcance los 10 puntos, el texto mostrará el ganador.
+
+  ### 2.6. Panel player choices (6)
+
+  - Panel con las cinco elecciones que el jugador puede realizar durante la partida.
+  - Al acercar el cursor del ratón a una de las elecciones estás serán agrandadas 1.5 en escala de la imagen.
+  - Cuando se seleccione una opción se inicará la ronda, donde la computadora elegirá su elección también.
+  - Las imágenes de cada elección serán mostraras en el Gamer Image.
+
+  ### 2.7. Restart button (7)
+
+  - El botón de restar game aparecerá cuando uno de los jugadores alcance los 2 puntos.
+  - Este botón será la única opción que podrá utilizar el jugador al acabar cada partida (10 rondas).
+
+  ### 2.8. Footer - Social network icons (8)
+
+  - Iconos de las redes sociales más famosas (FB, IG and Twitter)
+
+  ### 2.9. Footer - Instructions info icon (9)
+
+  - Junto a los iconos de las redes sociales y separado con un separador se podrá acceder al icono de las instrucciones de la partida.
+  - Cuando se haga click en el icono se activará un pop-up sweet alert 2 con las instrucciones de la partida.
+
    <a name="technologies"></a>
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
