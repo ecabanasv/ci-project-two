@@ -174,9 +174,18 @@ An initial image has been included in the README made through the Ami web tool t
 
 For the validation of the HTML code, the official tool has been used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options).
 
+#### HTML Validator
+ ![html validator](assets/readme/06-html-validator.png)
+
+#### CSS Validator
+ ![css validator](assets/readme/07-css-validator.png)
+
 ### 4.1.4 JS Hint (JavaScript)
 
 For the validation of the JavaScript code, the JSHint tool has been used [JSHint](https://jshint.com/).
+
+#### JS Validator
+ ![js validator](assets/readme/07-js-validator.png)
 
 ## 4.2 Manual Testing
 
