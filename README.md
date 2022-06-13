@@ -224,7 +224,7 @@ Cloning your repository will allow you to download a local version of the reposi
     2. In your Repository section, select the project repository that you want to deploy
     3. In the menu located at the top of this section, click `Settings`
     4. Select `Pages` on the left-hand menu - this is around halfway down
-    5. In the source section, select branch `Master` and save
+    5. In the source section, select branch `Main` and save
     6. The page is then given a site URL which you will see above the source section.
 
 Please note it can take a while for this link to become fully active. 
