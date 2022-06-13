@@ -219,7 +219,7 @@ panel choices| Correct functionality of game when player choose option: Rock, Sc
 winner round| Show winner round text when player/computer reach 10 poins | OK
 restart button| Show restart button after player/computer reach 2 points | OK
 
-### Footer
+## Footer
 
 TEST            | RESULT                           | OK / FAIL  
 --------------- | -------------------------------- | ---------------
@@ -232,13 +232,13 @@ Instructions | Load sweet alert with instructions info | OK
 # 5. Bugs
   [Go to the top](#table-of-contents)
 
+  ## Solved bugs
+
   - Container didn't fill the full height of the screen. I added height 100% of HTML and body.
   - When resizing the browser in Google Chrome, the body's background-color: #ffdc71, didn't fit whole page. Added the same background colour to class social networks.
   - Player could still play after reaching 10 points. I added a function for disabling player panel choices (EnableDisableChoicesGame).
   - The javaScript pop-up alert was very ugly. I added JS library "Sweet Alert 2", and it worked out beautifully.
   - When mobile all images didn´t fit well as they were big. I added CSS Grid: (from 500px) in @media for desktop and the original sizes. For the rest I reduced width of images by 50%.
-
-### Solved bugs
 
   <a name="deployment"></a>
 # 6. Deployment
@@ -299,14 +299,18 @@ The live link can be found [here](https://ecabanasv.github.io/ci-project-two/#).
 # 7. Acknowledgement
   [Go to the top](#table-of-contents)
  
-### Code
+## Code
 
-### Content
+- freecodecamp.org
+- codeinstitute.net
+- w3schools.com
+
+## Content
 
 - Many thanks to kasia_ci from Code Institute for all the guidance and info well provided during these weeks in the slack channel #msletb-mar-2022.
 - Also thanks to channel buddies in #peer-code-review for the code suggestions.
 
-### Images
+## Images
 
 - Rock Paper Scissors images (https://www.pngwing.com/en/free-png-iiamd)
 
