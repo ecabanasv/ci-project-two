@@ -54,11 +54,14 @@ function roundWinner(playerChoice, comChoice) {
     let winnerResult;
     playerPlays.innerText = playerChoice;
     computerPlays.innerText = comChoice;
+    
+    // If draw round show player-computer choices and result
     if (playerChoice === comChoice) {
         imgPlayer.src = 'assets/images/' + playerChoice + '-x.png';
         imgComputer.src = 'assets/images/' + comChoice + '-x.png';
 
         winnerResult = 'draw';
+    // Else if player choice and depends on what choice show winning-losing result for player-computer
     } else {
         switch (playerChoice) {
             case 'rock':
@@ -111,6 +114,7 @@ function roundWinner(playerChoice, comChoice) {
     }
 
     console.log("Result: " + winnerResult);
+    // Call function that increases score of player-computer, change color title and check if there is a winner of the game
     adjustScore(winnerResult);
 }
 
