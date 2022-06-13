@@ -22,8 +22,6 @@ The combinations of the choices are as follow:
 
 The live website can be found on this [link](https://ecabanasv.github.io/ci-project-two/#).
 
-## Table of Contents
-
 # Table of Contents
  [1. UX Design](#ux)
   - [User Goals:](#user-goals)
