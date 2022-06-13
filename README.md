@@ -143,9 +143,9 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) for structure and content of the website.
 * [CSS3](https://en.wikipedia.org/wiki/CSS) is used for styling the content and structuring using the CSS Grid system.
 * [Balsamiq](https://balsamiq.com/) used for creating wireframes in Desktop and Mobile versions.
-* [Google Fonts](https://fonts.google.com/) used to import font-family "Open Sans".
+* [Google Fonts](https://fonts.google.com/) used to import fonts.
 * [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) used for image edition (header, resizing and optimizing size)
-* [Font Awesome](https://fontawesome.com/) used for the icons on the menu, articles and contact page.
+* [Font Awesome](https://fontawesome.com/) used for the icons on the footer.
 * [Chrome](https://www.google.com/intl/en_uk/chrome/) used for debugging and test the website.
 * [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) used for debugging and testing the website.
 * [Github](https://github.com/) is used to create and update the online repository of the project.
@@ -153,7 +153,6 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 * [W3C Markup](https://validator.w3.org/) tool used for validate the HTML code of the project.
 * [Jigsaw validation](https://jigsaw.w3.org/) tool used for validating the CSS code of the project.
 * [JS Hint](https://jshint.com/) tool used for validating the JS code of the project.
-
 * [Ami](http://ami.responsivedesign.is/#) used for generate the different responsive versions of the project.
 
   <a name="testing-phase"></a>
