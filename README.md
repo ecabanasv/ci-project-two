@@ -70,7 +70,7 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 ## 1.3 Color Scheme
   [Go to the top](#table-of-contents)
   
-* HTML: #gray
+* HTML: #gainsboro
 * container: #ffdc71
 
 <a name="wireframes"></a>
