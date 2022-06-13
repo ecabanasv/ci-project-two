@@ -87,7 +87,7 @@ The terminal game is when one of the two (player or computer) reaches 10 points.
 # 2. Features
   [Go to the top](#table-of-contents)
 
-  ![website features](assets/readme/05-website-features.png)
+  ![website features](assets/readme/05-features.png)
 
   ### 2.1. Header (1)
 
