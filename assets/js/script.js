@@ -54,7 +54,7 @@ function roundWinner(playerChoice, comChoice) {
     let winnerResult;
     playerPlays.innerText = playerChoice;
     computerPlays.innerText = comChoice;
-    
+
     // If draw round show player-computer choices and result
     if (playerChoice === comChoice) {
         imgPlayer.src = 'assets/images/' + playerChoice + '-x.png';
