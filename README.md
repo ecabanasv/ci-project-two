@@ -232,6 +232,12 @@ Instructions | Load sweet alert with instructions info | OK
 # 5. Bugs
   [Go to the top](#table-of-contents)
 
+  - Container didn't fill the full height of the screen. I added height 100% of HTML and body.
+  - When resizing the browser in Google Chrome, the body's background-color: #ffdc71, didn't fit whole page. Added the same background colour to class social networks.
+  - Player could still play after reaching 10 points. I added a function for disabling player panel choices (EnableDisableChoicesGame).
+  - The javaScript pop-up alert was very ugly. I added JS library "Sweet Alert 2", and it worked out beautifully.
+  - When mobile all images didn´t fit well as they were big. I added CSS Grid: (from 500px) in @media for desktop and the original sizes. For the rest I reduced width of images by 50%.
+
 ### Solved bugs
 
   <a name="deployment"></a>
@@ -297,6 +303,14 @@ The live link can be found [here](https://ecabanasv.github.io/ci-project-two/#).
 
 ### Content
 
+- Thank you to kasia_ci from Code Institute for all the guidance in the slack channel #msletb-mar-2022.
+- Also thank you to channel #peer-code-review for the code suggestions.
+
+### Images
+
+- Rock Paper Scissors images (https://www.pngwing.com/en/free-png-iiamd)
+
+- Header: https://www.wallpaperflare.com/live-long-and-prosper-spock-star-trek-wallpaper-ucvum
 
 
 
