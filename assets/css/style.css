@@ -2,9 +2,7 @@
 
 html,
 body {
-    border-left: 1px dotted gray;
-    border-right: 1px dotted gray;
-    box-shadow: 0px 5px 5px 0px gray;
+    border: 1px dotted gray;
 }
 
 html {
